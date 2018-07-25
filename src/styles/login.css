@@ -1,4 +1,4 @@
-.login {
+.register {
   text-align: center;
   font-family: 'Monda', sans-serif;
   color: #0ACC72;
@@ -6,7 +6,7 @@
 .wrapper {
   display: inline-block;
   position: absolute;
-  top: 43%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
@@ -52,9 +52,12 @@ form h2 {
   text-transform: uppercase;
   /* text-align: center; */
 }
+.field {
+  margin-bottom: 20px;
+}
 label {
   display: inline-block;
-  width: 75px;
+  width: 95px;
   margin-right: 20px;
 }
 input {

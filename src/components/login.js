@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 
-class Login extends Component {
+class Login extends React.Component {
+  state = {
+    username: '',
+    password: ''
+  }
   render() {
     return (
       <div className="login">
@@ -36,6 +40,6 @@ const golfer = [
   { name: 'Phil Mickelson', strokes: 64 }
 ]
 
-console.log(golfer);
+console.log(golfer)
 
 export default Login
