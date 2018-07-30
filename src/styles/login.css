@@ -1,6 +1,6 @@
 .register {
   text-align: center;
-  font-family: 'Monda', sans-serif;
+  font-family: 'Questrial', sans-serif;
   color: #0ACC72;
 }
 .wrapper {
@@ -75,7 +75,7 @@ input[type="submit"] {
   margin-top: 50px;
   border: 2px solid #0ACC72;  
   color: #0ACC72;  
-  font-family: 'Monda', sans-serif;
+  font-family: 'Questrial', sans-serif;
   height: 44px;
   width: 100%;
   font-size: 16px;

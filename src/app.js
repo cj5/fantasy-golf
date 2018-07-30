@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
-import Register from './components/register'
+import React, { Component } from 'react';
 
-class App extends Component {
+export default class App extends Component {
   
   state = {
     fields: {}
@@ -23,5 +22,3 @@ class App extends Component {
   }
 
 }
-
-export default App

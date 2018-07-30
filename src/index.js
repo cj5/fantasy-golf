@@ -1,16 +1,27 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { ApolloClient, createNetworkInterface, ApolloProvider } from 'react-apollo';
 
-// import { Provider } from 'react-redux'
-// import { createStore, applyMiddleware } from 'redux'
-// import { BrowserRouter, Route, Switch } from 'react-router-dom'
-// import promise from 'redux-promise'
+import Routes from './routes';
 
-import App from './app'
-import './styles/login.css'
-import registerServiceWorker from './registerServiceWorker'
+// import App from './app';
+import './styles/login.css';
 
-ReactDOM.render(
-  <App />, document.getElementById('root')
-)
-registerServiceWorker()
+import registerServiceWorker from './registerServiceWorker';
+
+const networkInterface = createNetworkInterface({
+  uri: 'http://localhost:3333',
+});
+
+const client = new ApolloClient({
+  networkInterface,
+});
+
+const App = (
+  <ApolloProvider client={client}>
+    <Routes />
+  </ApolloProvider>
+);
+
+ReactDOM.render(App, document.getElementById('root'));
+registerServiceWorker();

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Login extends React.Component {
+export default class Login extends React.Component {
   state = {
     firstName: '',
     lastName: '',
@@ -17,7 +17,7 @@ class Login extends React.Component {
 
   onSubmit = (e) => {
     e.preventDefault()
-    // this.props.onSubmit(this.state)
+    // this.props.onSubmit(this.state)k
     console.log(this.state)
     this.setState({
       firstName: '',
@@ -44,18 +44,18 @@ class Login extends React.Component {
               <input 
                 value={this.state.firstName} 
                 onChange={e => this.change(e)}
-                type="text" 
-                name="firstName" 
+                type="text"
+                name="firstName"
               />
             </div>
             {/* ----------------- */}
-            <div className="lastname field">  
+            <div className="lastname field">
               <label>Last Name</label>
-              <input 
-                value={this.state.lastName} 
+              <input
+                value={this.state.lastName}
                 onChange={e => this.change(e)}
-                type="text" 
-                name="lastName" 
+                type="text"
+                name="lastName"
               />
             </div>
             {/* ----------------- */}
@@ -95,5 +95,3 @@ class Login extends React.Component {
     )
   }
 }
-
-export default Login
